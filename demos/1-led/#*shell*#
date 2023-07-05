@@ -1,0 +1,1572 @@
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  236 bytes at c004 [section: .text]...
+Done, 242 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+main.c: In function 'main':
+main.c:9:11: error: lvalue required as left operand of assignment
+   LED_RED = LED_RED << 6;
+           ^
+make: *** [<builtin>: main.o] Error 1
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+main.c: In function 'main':
+main.c:9:25: error: expected ')' before ';' token
+   P1OUT |= (LED_RED << 0;
+            ~            ^
+                         )
+main.c:14:15: error: expected ';' before '}' token
+   or_sr(0x18);  /* CPU off, GIE on */
+               ^
+               ;
+ }
+ ~              
+make: *** [<builtin>: main.o] Error 1
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  226 bytes at c004 [section: .text]...
+Done, 232 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  212 bytes at c004 [section: .text]...
+Done, 218 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  226 bytes at c004 [section: .text]...
+Done, 232 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  232 bytes at c004 [section: .text]...
+Done, 238 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  228 bytes at c004 [section: .text]...
+Done, 234 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  242 bytes at c004 [section: .text]...
+Done, 248 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> maek cl
+If 'maek' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf maek
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  244 bytes at c004 [section: .text]...
+Done, 250 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  252 bytes at c004 [section: .text]...
+Done, 258 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  260 bytes at c004 [section: .text]...
+Done, 266 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/1-led> cd ..
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> ls
+10-switch-full-modular  3-led-blink          7-led-blink-file-modular  lib
+11-buzzer               4-led-blink-pattern  8-switch                  Makefile
+1-led                   5-led-fn-modular     9-switch-flash-combo      README.md
+2-led-interrupt         6-led-assy           h                         timerLib
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> cd 2-led-interrupt/
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> ls
+led.elf  led.h  #main.c#  main.c  main.o  Makefile  README.md
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 004: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 004
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fff4 [section: __interrupt_vector_11]...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  364 bytes at c004 [section: .text]...
+Done, 372 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> make load 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check Bus 002 Device 005: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fff4 [section: __interrupt_vector_11]...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  364 bytes at c004 [section: .text]...
+Done, 372 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> cat README.md 
+## Description
+
+This program confirms that at least one periodic interrupt occurs.
+
+It (1) sets up P1 to control the LEDS, (2) enables periodic
+interrupts, and then (3) the the periodic interrrupt (repeatedly turns
+on the red LED.
+
+## Suggested Activities
+
+* Modify so that different combinations of LEDs are illuminated.
+
+* Try to modify the interrupt handler so that an LED flashes on and off
+  quickly (and thereby appears dimmer).DON'T MODIFY THE MAIN.
+  
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/2-led-interrupt> cd ..
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> cd 11-buzzer/
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/11-buzzer> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/11-buzzer> make
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o buzzer.o buzzer.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include   -c -o buzzerMain.o buzzerMain.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include -o buzzer.elf buzzer.o buzzerMain.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/11-buzzer> make load 
+msp430loader.sh  buzzer.elf
+check Bus 002 Device 005: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  buzzer.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 005
+rf2500: warning: can't detach kernel driver: No such file or directory
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+fet: FET returned error code 4 (Could not find device or device not supported)
+fet: command C_IDENT1 failed
+fet: identify failed
+Trying again...
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Sending reset...
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  404 bytes at c004 [section: .text]...
+Done, 410 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/11-buzzer> cd ..
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> cd 3-led-blink/
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> make clean 
+rm -f *.o *.elf
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> make all 
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> make load 
+msp430loader.sh led.elf
+check Bus 002 Device 006: ID 0451:f432 Texas Instruments, Inc. eZ430 Development Tool
+Detected ez430 dev kit
+mspdebug rf2500 "prog  led.elf "
+MSPDebug version 0.21 - debugging tool for MSP430 MCUs
+Copyright (C) 2009-2012 Daniel Beer <dlbeer@gmail.com>
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Trying to open interface 1 on 006
+Initializing FET...
+FET protocol version is 30394216
+Set Vcc: 3000 mV
+Configured for Spy-Bi-Wire
+Device ID: 0x2553
+  Code start address: 0xc000
+  Code size         : 16384 byte = 16 kb
+  RAM  start address: 0x200
+  RAM  end   address: 0x3ff
+  RAM  size         : 512 byte = 0 kb
+Device: MSP430G2553/G2403
+Number of breakpoints: 2
+fet: FET returned NAK
+warning: device does not support power profiling
+Chip ID data: 25 53
+Erasing...
+Programming...
+Writing    2 bytes at fff4 [section: __interrupt_vector_11]...
+Writing    2 bytes at fffe [section: __reset_vector]...
+Writing    4 bytes at c000 [section: .rodata2]...
+Writing  408 bytes at c004 [section: .text]...
+Writing    2 bytes at c19c [section: .data]...
+Done, 418 bytes total
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> 
