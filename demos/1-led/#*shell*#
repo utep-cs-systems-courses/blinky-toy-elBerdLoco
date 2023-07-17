@@ -1569,4 +1569,129 @@ Writing    4 bytes at c000 [section: .rodata2]...
 Writing  408 bytes at c004 [section: .text]...
 Writing    2 bytes at c19c [section: .data]...
 Done, 418 bytes total
-student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> 
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos/3-led-blink> cd ..
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> ls
+10-switch-full-modular  3-led-blink          7-led-blink-file-modular  lib
+11-buzzer               4-led-blink-pattern  8-switch                  Makefile
+1-led                   5-led-fn-modular     9-switch-flash-combo      README.md
+2-led-interrupt         6-led-assy           h                         timerLib
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> git add .
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   1-led/#*shell*#
+	new file:   1-led/#led.h#
+	new file:   1-led/*shell*
+	new file:   1-led/.#*shell*
+	new file:   1-led/.#led.h
+	new file:   1-led/led.elf
+	modified:   1-led/main.c
+	new file:   1-led/main.o
+	new file:   10-switch-full-modular/button.elf
+	new file:   10-switch-full-modular/buttonMain.o
+	new file:   10-switch-full-modular/led.o
+	new file:   10-switch-full-modular/p1_interrupt_handler.o
+	new file:   10-switch-full-modular/switches.o
+	new file:   11-buzzer/buzzer.elf
+	new file:   11-buzzer/buzzer.o
+	new file:   11-buzzer/buzzerMain.o
+	new file:   2-led-interrupt/#main.c#
+	modified:   2-led-interrupt/README.md
+	new file:   2-led-interrupt/led.elf
+	modified:   2-led-interrupt/main.c
+	new file:   2-led-interrupt/main.o
+	new file:   3-led-blink/led.elf
+	new file:   3-led-blink/main.o
+	new file:   4-led-blink-pattern/led.elf
+	new file:   4-led-blink-pattern/main.o
+	new file:   5-led-fn-modular/led.elf
+	new file:   5-led-fn-modular/main.o
+	new file:   6-led-assy/greenControl-c.o
+	new file:   6-led-assy/greenControl-s.o
+	new file:   6-led-assy/led-c.elf
+	new file:   6-led-assy/led-s.elf
+	new file:   6-led-assy/main.o
+	new file:   7-led-blink-file-modular/blink.elf
+	new file:   7-led-blink-file-modular/blinkMain.o
+	new file:   7-led-blink-file-modular/led.o
+	new file:   7-led-blink-file-modular/stateMachines.o
+	new file:   7-led-blink-file-modular/wdInterruptHandler.o
+	new file:   8-switch/button.elf
+	new file:   8-switch/main.o
+	new file:   9-switch-flash-combo/button.elf
+	new file:   9-switch-flash-combo/main.o
+	new file:   h/clocksTimer.h
+	new file:   h/libTimer.h
+	new file:   h/sr.h
+	new file:   lib/libTimer.a
+	new file:   timerLib/clocksTimer.o
+	new file:   timerLib/sr.o
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   1-led/#*shell*#
+
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> git commit -m "blinkyUpdate01"
+[master 38332a3] blinkyUpdate01
+ 47 files changed, 2918 insertions(+), 4 deletions(-)
+ create mode 100644 demos/1-led/#*shell*#
+ create mode 100644 demos/1-led/#led.h#
+ create mode 100644 demos/1-led/*shell*
+ create mode 120000 demos/1-led/.#*shell*
+ create mode 120000 demos/1-led/.#led.h
+ create mode 100755 demos/1-led/led.elf
+ create mode 100644 demos/1-led/main.o
+ create mode 100755 demos/10-switch-full-modular/button.elf
+ create mode 100644 demos/10-switch-full-modular/buttonMain.o
+ create mode 100644 demos/10-switch-full-modular/led.o
+ create mode 100644 demos/10-switch-full-modular/p1_interrupt_handler.o
+ create mode 100644 demos/10-switch-full-modular/switches.o
+ create mode 100755 demos/11-buzzer/buzzer.elf
+ create mode 100644 demos/11-buzzer/buzzer.o
+ create mode 100644 demos/11-buzzer/buzzerMain.o
+ create mode 100644 demos/2-led-interrupt/#main.c#
+ create mode 100755 demos/2-led-interrupt/led.elf
+ create mode 100644 demos/2-led-interrupt/main.o
+ create mode 100755 demos/3-led-blink/led.elf
+ create mode 100644 demos/3-led-blink/main.o
+ create mode 100755 demos/4-led-blink-pattern/led.elf
+ create mode 100644 demos/4-led-blink-pattern/main.o
+ create mode 100755 demos/5-led-fn-modular/led.elf
+ create mode 100644 demos/5-led-fn-modular/main.o
+ create mode 100644 demos/6-led-assy/greenControl-c.o
+ create mode 100644 demos/6-led-assy/greenControl-s.o
+ create mode 100755 demos/6-led-assy/led-c.elf
+ create mode 100755 demos/6-led-assy/led-s.elf
+ create mode 100644 demos/6-led-assy/main.o
+ create mode 100755 demos/7-led-blink-file-modular/blink.elf
+ create mode 100644 demos/7-led-blink-file-modular/blinkMain.o
+ create mode 100644 demos/7-led-blink-file-modular/led.o
+ create mode 100644 demos/7-led-blink-file-modular/stateMachines.o
+ create mode 100644 demos/7-led-blink-file-modular/wdInterruptHandler.o
+ create mode 100755 demos/8-switch/button.elf
+ create mode 100644 demos/8-switch/main.o
+ create mode 100755 demos/9-switch-flash-combo/button.elf
+ create mode 100644 demos/9-switch-flash-combo/main.o
+ create mode 100644 demos/h/clocksTimer.h
+ create mode 100644 demos/h/libTimer.h
+ create mode 100644 demos/h/sr.h
+ create mode 100644 demos/lib/libTimer.a
+ create mode 100644 demos/timerLib/clocksTimer.o
+ create mode 100644 demos/timerLib/sr.o
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> git push
+Counting objects: 60, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (58/58), done.
+Writing objects: 100% (60/60), 43.90 KiB | 2.19 MiB/s, done.
+Total 60 (delta 26), reused 0 (delta 0)
+remote: Resolving deltas: 100% (26/26), completed with 11 local objects.        
+To https://github.com/utep-cs-systems-courses/blinky-toy-elBerdLoco.git
+   51da72f..38332a3  master -> master
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> /sbin/poweroff 
+student@systems-vm:~/Projects/blinky-toy-elBerdLoco/demos> 
