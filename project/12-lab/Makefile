@@ -10,7 +10,7 @@ AS              = msp430-elf-as
 all: buzzer.elf 
 
 #additional rules for files
-buzzer.elf: ${COMMON_OBJECTS} buzzer.o buzzerMain.o p1_interrupt_handler.o led.o switches.o ../lib/libTimer.a
+buzzer.elf: ${COMMON_OBJECTS} buzzer.o buzzerMain.o p2_interrupt_handler.o led.o switches.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
 load: buzzer.elf
@@ -21,5 +21,3 @@ clean: $^
 
 buzzer.c: buzzer.h
 buzzerMain.c: buzzer.h
-
-
